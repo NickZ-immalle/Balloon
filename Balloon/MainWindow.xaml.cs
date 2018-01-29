@@ -19,9 +19,31 @@ namespace Balloon
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Balloon balloon1;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            balloon1 = new Balloon();
+            balloon1.DisplayOn(MijnCanvas);
         }
+
+        private void Knop1_Click(object sender, RoutedEventArgs e)
+        {
+            balloon1.MoveRight(10);
+        } 
+
+        private void Knop2_Click(object sender, RoutedEventArgs e)
+        {
+            balloon1.ChangeSize(10);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            balloon1.Color(Brushes.DarkGoldenrod);
+        }
+
+
     }
 }

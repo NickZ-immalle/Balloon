@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Canvas x:Name="MijnCanvas" HorizontalAlignment="Left" Height="319" VerticalAlignment="Top" Width="517">
+            <Button x:Name="Knop1" Content="Move" Height="33" Canvas.Left="10" Canvas.Top="10" Width="66" Background="#FFFB1010"/>
+            <Button x:Name="Knop2" Content="Grow" Height="33" Canvas.Left="10" Canvas.Top="50" Width="66" Click="Knop2_Click" Background="#FFF07107"/>
+            <Button Content="Color" Height="33" Canvas.Left="10" Canvas.Top="90" Width="66" Background="#FF54F309" Click="Button_Click"/>
+        </Canvas>
+
     </Grid>
 </Window>
